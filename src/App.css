@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+    height: 50px;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 2.9px 7.45px rgba(0, 0, 0, 0.1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.airbnb-logo{
+    height: 20px;
+    max-width: 100px;
+    width: 70px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+hero{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
+.main-image{
 
-.App-link {
-  color: #61dafb;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
+.img-main{
+   max-width: 350px;
+   align-self: center;
+}
+.main-content{
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.title-1{
+    font-size: 30px;
+    margin-bottom: 10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.caps-1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.card{
+    display: flex;
+    /* background-color: red; */
+    flex-direction:column;
+    flex: 0 0 auto;
+    position: relative;
+
+    width: 150px;
+    font-size: 12px;
+
+}
+.card--image{
+    width: 100%;
+    border-radius: 9px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.card-stats{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.card-rating{
+    margin-right: 5px;
+    height: 14px;
+    width: 14px;
+}
+.grey{
+    color: rgba(107, 107, 107, 0.842);
+}
+.bold{
+    font-weight: bold;
+}
+.cards-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+.title{
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.badge{
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    background-color: antiquewhite;
+    padding: 3px 3px;
+    border-radius: 2px;
+    font-weight: bold;
 }
